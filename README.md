@@ -1,8 +1,12 @@
 # STREAMER
 
-**Run in cmd/powershell/shell :**
-> npm i discord.js-selfbot
 
-> npm i express
+**◪ Made by ⏤͟͟͞⍟・🜲 PAiN ❯❯❯#4005 **
 
-**FIll " " in index.js with suitable values**
+**◪ Run in cmd/powershell/shell :**
+
+- npm i discord.js-selfbot
+- npm i express
+- 
+
+**◪ FIll " " in index.js with suitable values**
