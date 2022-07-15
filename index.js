@@ -1,11 +1,7 @@
-
 let Discord = require("discord.js-selfbot");
 let client = new Discord.Client();
 
-let type = "STREAMING"
-let status = ""
-let link = ""
-let token = ""
+let {type, status, link, token } = require("./config")
 
 //Dont put in secrets - env not supported
 
