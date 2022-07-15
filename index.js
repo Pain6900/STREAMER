@@ -50,6 +50,11 @@ client.on("ready", async () => {
 const express = require("express")
 const app = express()
 const server = app.listen(3000, () => {
+  console.log(" _______________________________")
   console.log("")
+  console.log("| WEB-WINDOW POWERED BY EXPRESS |")
+  console.log(" _______________________________")
+  console.log("")
+
 })
-app.get("/", (req, res) => res.send(""))
+app.get("/", (req, res) => res.send("Copy the link above and put to monitor "))
