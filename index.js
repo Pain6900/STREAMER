@@ -1,7 +1,7 @@
 let Discord = require("discord.js-selfbot");
 let client = new Discord.Client();
 
-let {type, status, link, token } = require("./config")
+let { type, status, link, token } = require("./config")
 
 //Dont put in secrets - env not supported
 
@@ -10,8 +10,10 @@ client.login(token)
 
 client.on("message", message => {
 
-  if (message.content.startsWith("ping") && message.author.id == client.user)
+  if (message.content.toLowerCase() == "self-ping" && message.author.id == client.user) {
     message.channel.send(`Pong🏓 | Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
+  }
+
 });
 
 
@@ -51,7 +53,7 @@ const server = app.listen(3000, () => {
   console.log("| /./\\//? Booting Client ...... |")
   console.log("| Please be patient ........... |")
   console.log(" _______________________________")
-  
+
 
 })
 app.get("/", (req, res) => res.send("Copy the link above and put to monitor "))
