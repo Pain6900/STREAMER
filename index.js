@@ -23,11 +23,8 @@ client.on("ready", async () => {
     type: type,
     url: link
   })
+  console.clear()
   console.log("logged in as :" + client.user)
-  console.log("Status : " + status)
-  console.log("Type : " + type)
-  console.log("URL : " + link)
-
   console.log(" _______________________________")
   console.log("  ")
   console.log("| ✅ OPERATION SUCCESSFUL       |")
@@ -35,8 +32,8 @@ client.on("ready", async () => {
   console.log("| ✅ STATUS SET SUCCESSFULLY    |")
   console.log(" _______________________________")
   console.log("  ")
-  console.log("Made by : ⏤͟͟͞⍟・🜲 PAiN ❯❯❯#4005")
-
+  console.log("| Made by : ⏤͟͟͞⍟・🜲 PAiN ❯❯❯#4005 |")
+  console.log(" _______________________________")
 
 })
 
@@ -51,6 +48,10 @@ const server = app.listen(3000, () => {
   console.log("| WEB-WINDOW POWERED BY EXPRESS |")
   console.log(" _______________________________")
   console.log("")
+  console.log("| /./\\//? Booting Client ...... |")
+  console.log("| Please be patient ........... |")
+  console.log(" _______________________________")
+  
 
 })
 app.get("/", (req, res) => res.send("Copy the link above and put to monitor "))
