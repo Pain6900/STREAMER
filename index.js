@@ -1,4 +1,4 @@
-let Discord = require("discord.js-selfbot");
+let Discord = require("discord.js-selfbot-v13");
 let client = new Discord.Client();
 
 let { type, status, link, token } = require("./config")
@@ -8,22 +8,23 @@ let { type, status, link, token } = require("./config")
 
 client.login(token)
 
-client.on("message", message => {
+
+
+client.on("messageCreate", async message => {
 
   if (message.content.toLowerCase() == "self-ping" && message.author.id == client.user) {
-    message.channel.send(`Pong🏓 | Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
+    await message.channel.send(`Pong🏓 | Latency is ${Date.now() - message.createdTimestamp}ms. API Latency is ${Math.round(client.ws.ping)}ms`);
   }
 
 });
-
-
 
 
 client.on("ready", async () => {
 
   await client.user.setActivity(status, {
     type: type,
-    url: link
+    //url: link
+    //remove the "//" in the above line if statys type is Streaming
   })
   console.clear()
   console.log("logged in as :" + client.user)
