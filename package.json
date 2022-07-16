@@ -1,17 +1,17 @@
 {
   "name": "STREAMER",
   "version": "1.0.0",
-  "description": "A selfbot to get streaming status",
+  "description": "a selfbot to get streaming status",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "⏤͟͟͞⍟・🜲 PAiN ❯❯❯#4005",
   "license": "CC0 1.0",
   "dependencies": {
-    "discord.js-selfbot": "^12.0.2",
+    "discord.js-selfbot-v13": "^2.3.8",
     "express": "^4.18.1"
   }
 }
