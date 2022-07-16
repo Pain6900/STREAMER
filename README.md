@@ -6,10 +6,10 @@
 
 ```json
 {
-"status" : "",    //Name of activity or status to be shown
-"type" : "",      //PLAYING / WATCHING / LISTENING / STREAMING
-"link" : "",      //stream link if type is set to streaming
-"token" : ""      //user token
+"status" : "Name of activity or status to be shown",
+"type" : "PLAYING / WATCHING / LISTENING / STREAMING",
+"link" : "stream link if type is set to streaming",
+"token" : "user token"
 }
 
 ```
