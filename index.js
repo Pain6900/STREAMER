@@ -21,7 +21,7 @@ client.on("messageCreate", async message => {
 
 client.on("ready", async () => {
 
-  await client.user.setActivity(status, {
+  client.user.setActivity(status, {
     type: type,
     //url: link
     //remove the "//" in the above line if statys type is Streaming
