@@ -4,6 +4,16 @@
 
 **◪ FIll everything in config.json with suitable values**
 
+```json
+{
+"status" : "",    //Name of activity or status to be shown
+"type" : "",      //PLAYING / WATCHING / LISTENING / STREAMING
+"link" : "",      //stream link if type is set to streaming
+"token" : ""      //user token
+}
+
+```
+
 **◪ Run in cmd/powershell/shell :**
 
 - npm i discord.js-selfbot
